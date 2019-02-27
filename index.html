@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Earthquake simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png" >
+</head>
+<body>
+    <div class="container">
+        <div class="menu menu-1">
+            <div class="inner">
+                <h3>parameters</h3>
+                <div class="global_informations">
+                    <h4>global informations</h4>
+                    <div class="day_informations">
+                        <p></p>
+                        <img src="images/cloud_empty.png" alt="">
+                        <img src="images/cloud_color.png" alt="">
+                    </div>
+                    <div class="equalizer">
+                        <div class="bar bar-1"></div>
+                        <div class="bar bar-2"></div>
+                        <div class="bar bar-3"></div>
+                        <div class="bar bar-4"></div>
+                        <div class="bar bar-5"></div>
+                        <div class="bar bar-6"></div>
+                        <div class="bar bar-7"></div>
+                        <div class="bar bar-8"></div>
+                        <div class="bar bar-9"></div>
+                        <div class="bar bar-10"></div>
+                        <div class="bar bar-11"></div>
+                        <div class="bar bar-12"></div>
+                        <div class="bar bar-13"></div>
+                        <div class="bar bar-14"></div>
+                        <div class="bar bar-15"></div>
+                        <div class="bar bar-16"></div>
+                        <div class="bar bar-17"></div>
+                        <div class="bar bar-18"></div>
+                        <div class="bar bar-19"></div>
+                        <div class="bar bar-20"></div>
+                        <div class="bar bar-21"></div>
+                        <div class="bar bar-22"></div>
+                        <div class="bar bar-23"></div>
+                        <div class="bar bar-24"></div>
+                        <div class="bar bar-25"></div>
+                    </div>
+                    <div class="end_line">
+                        <img src="images/back_line.png" alt="">
+                        <img src="images/front_line.png" alt="">
+                    </div>
+                </div>
+                <div class="city">
+                    <h4>city</h4>
+                    <div class="city_big_container">
+                        <div data-src="dubai" class="city_container"><p>dubai</p></div>
+                        <div data-src="paris" class="city_container"><p>paris</p></div>
+                        <div data-src="bangkok" class="city_container"><p>bangkok</p></div>
+                        <div data-src="montreal" class="city_container"><p>montreal</p></div>
+                        <div data-src="tokyo" class="city_container"><p>tokyo</p></div>
+                        <div data-src="rio" class="city_container"><p>rio</p></div>
+                        <div data-src="lasvegas" class="city_container"><p>las vegas</p></div>
+                        <div data-src="sydney" class="city_container"><p>sydney</p></div>
+                        <div data-src="lecap" class="city_container"><p>le cap</p></div>
+                    </div>
+                </div>
+                <div class="start_earthquake">
+                    <div class="bg_circle"></div>
+                    <h5>make it wave</h5>
+                    <div class="square square-1"></div>
+                    <div class="square square-2"></div>
+                    <div class="square square-3"></div>
+                    <div class="square square-4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="menu menu-2">
+            <div class="inner">
+                <div class="alert">
+                    <img src="images/warning.png" alt="">
+                    <h5></h5>
+                    <img src="images/warning.png" alt="">
+                </div>
+                <div class="richter_scale">
+                    <h4>richter scale</h4>
+                    <div class="scale_container">
+                        <div class="scale scale-1">
+                            <div class="center">
+                                <div class="circle circle-0"></div>
+                                <div class="circle circle-1"></div>
+                                <div class="circle circle-2">
+                                    <div class="little_circle little_circle-1">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-2">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-3">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-4">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-5">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-6">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-7">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-8">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                </div>
+                                <p>1</p>
+                            </div>
+                            <p class="magnitude">magnitude</p>
+                            <p class="energy">energy</p>
+                            <h5>minor</h5>
+                        </div>
+                        <div class="scale scale-2">
+                            <div class="center">
+                                <div class="circle circle-0"></div>
+                                <div class="circle circle-1"></div>
+                                <div class="circle circle-2">
+                                    <div class="little_circle little_circle-1">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-2">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-3">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-4">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-5">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-6">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-7">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-8">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                </div>
+                                <p>2</p>
+                            </div>
+                            <p class="magnitude">magnitude</p>
+                            <p class="energy">energy</p>
+                            <h5>small</h5>
+                        </div>
+                        <div class="scale scale-3">
+                            <div class="center">
+                                <div class="circle circle-0"></div>
+                                <div class="circle circle-1"></div>
+                                <div class="circle circle-2">
+                                    <div class="little_circle little_circle-1">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-2">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-3">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-4">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-5">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-6">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-7">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-8">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                </div>
+                                <p>3</p>
+                            </div>
+                            <p class="magnitude">magnitude</p>
+                            <p class="energy">energy</p>
+                            <h5 class="moderate">moderate</h5>
+                        </div>
+                        <div class="scale scale-4">
+                            <div class="center">
+                                <div class="circle circle-0"></div>
+                                <div class="circle circle-1"></div>
+                                <div class="circle circle-2">
+                                    <div class="little_circle little_circle-1">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-2">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-3">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-4">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-5">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-6">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-7">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-8">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                </div>
+                                <p>4</p>
+                            </div>
+                            <p class="magnitude">magnitude</p>
+                            <p class="energy">energy</p>
+                            <h5 class="moderate">moderate</h5>
+                        </div>
+                        <div class="scale scale-5">
+                            <div class="center">
+                                <div class="circle circle-0"></div>
+                                <div class="circle circle-1"></div>
+                                <div class="circle circle-2">
+                                    <div class="little_circle little_circle-1">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-2">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-3">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-4">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-5">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-6">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-7">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-8">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                </div>
+                                <p>5</p>
+                            </div>
+                            <p class="magnitude">magnitude</p>
+                            <p class="energy">energy</p>
+                            <h5 class="strong">strong</h5>
+                        </div>
+                        <div class="scale scale-6">
+                            <div class="center">
+                                <div class="circle circle-0"></div>
+                                <div class="circle circle-1"></div>
+                                <div class="circle circle-2">
+                                    <div class="little_circle little_circle-1">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-2">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-3">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-4">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-5">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-6">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-7">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-8">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                </div>
+                                <p>6</p>
+                            </div>
+                            <p class="magnitude">magnitude</p>
+                            <p class="energy">energy</p>
+                            <h5 class="strong">strong</h5>
+                        </div>
+                        <div class="scale scale-7">
+                            <div class="center">
+                                <div class="circle circle-0"></div>
+                                <div class="circle circle-1"></div>
+                                <div class="circle circle-2">
+                                    <div class="little_circle little_circle-1">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-2">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-3">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-4">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-5">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-6">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-7">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-8">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                </div>
+                                <p>7</p>
+                            </div>
+                            <p class="magnitude">magnitude</p>
+                            <p class="energy">energy</p>
+                            <h5>major</h5>
+                        </div>
+                        <div class="scale scale-8">
+                            <div class="center">
+                                <div class="circle circle-0"></div>
+                                <div class="circle circle-1"></div>
+                                <div class="circle circle-2">
+                                    <div class="little_circle little_circle-1">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-2">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-3">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-4">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-5">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-6">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-7">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-8">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                </div>
+                                <p>8</p>
+                            </div>
+                            <p class="magnitude">magnitude</p>
+                            <p class="energy">energy</p>
+                            <h5>major</h5>
+                        </div>
+                        <div class="scale scale-9">
+                            <div class="center">
+                                <div class="circle circle-0"></div>
+                                <div class="circle circle-1"></div>
+                                <div class="circle circle-2">
+                                    <div class="little_circle little_circle-1">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-2">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-3">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-4">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-5">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-6">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-7">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                    <div class="little_circle little_circle-8">
+                                        <div class="little_circle_inner"></div>
+                                    </div>
+                                </div>
+                                <p>9</p>
+                            </div>
+                            <p class="magnitude">magnitude</p>
+                            <p class="energy">energy</p>
+                            <h5>great</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Earthquake simulator</h1>
+        <h2>Click to start !</h2>
+        <div class="start_button">
+            <div class="round round-0"></div>
+            <div class="round round-1"></div>
+            <div class="round round-2">
+                <div class="round little_round-1"></div>
+                <div class="round little_round-2">
+                    <div class="bar bar-1"><div class="bar_inner"></div></div>
+                    <div class="bar bar-2"><div class="bar_inner"></div></div>
+                    <div class="bar bar-3"><div class="bar_inner"></div></div>
+                    <div class="bar bar-4"><div class="bar_inner"></div></div>
+                    <div class="bar bar-5"><div class="bar_inner"></div></div>
+                    <div class="bar bar-6"><div class="bar_inner"></div></div>
+                    <div class="bar bar-7"><div class="bar_inner"></div></div>
+                    <div class="bar bar-8"><div class="bar_inner"></div></div>
+                    <div class="bar bar-9"><div class="bar_inner"></div></div>
+                    <div class="bar bar-10"><div class="bar_inner"></div></div>
+                    <div class="bar bar-11"><div class="bar_inner"></div></div>
+                    <div class="bar bar-12"><div class="bar_inner"></div></div>
+                    <div class="bar bar-13"><div class="bar_inner"></div></div>
+                    <div class="bar bar-14"><div class="bar_inner"></div></div>
+                    <div class="bar bar-15"><div class="bar_inner"></div></div>
+                    <div class="bar bar-16"><div class="bar_inner"></div></div>
+                    <div class="bar bar-17"><div class="bar_inner"></div></div>
+                    <div class="bar bar-18"><div class="bar_inner"></div></div>
+                    <div class="bar bar-19"><div class="bar_inner"></div></div>
+                    <div class="bar bar-20"><div class="bar_inner"></div></div>
+                    <div class="bar bar-21"><div class="bar_inner"></div></div>
+                    <div class="bar bar-22"><div class="bar_inner"></div></div>
+                    <div class="bar bar-23"><div class="bar_inner"></div></div>
+                    <div class="bar bar-24"><div class="bar_inner"></div></div>
+                </div>
+                <div class="round little_round-3"></div>
+                <div class="round little_round-4"></div>
+                <div class="round little_round-5">
+                        <div class="bar bar-1"><div class="bar_inner"></div></div>
+                        <div class="bar bar-2"><div class="bar_inner"></div></div>
+                        <div class="bar bar-3"><div class="bar_inner"></div></div>
+                        <div class="bar bar-4"><div class="bar_inner"></div></div>
+                        <div class="bar bar-5"><div class="bar_inner"></div></div>
+                        <div class="bar bar-6"><div class="bar_inner"></div></div>
+                        <div class="bar bar-7"><div class="bar_inner"></div></div>
+                        <div class="bar bar-8"><div class="bar_inner"></div></div>
+                        <div class="bar bar-9"><div class="bar_inner"></div></div>
+                        <div class="bar bar-10"><div class="bar_inner"></div></div>
+                        <div class="bar bar-11"><div class="bar_inner"></div></div>
+                        <div class="bar bar-12"><div class="bar_inner"></div></div>
+                        <div class="bar bar-13"><div class="bar_inner"></div></div>
+                        <div class="bar bar-14"><div class="bar_inner"></div></div>
+                        <div class="bar bar-15"><div class="bar_inner"></div></div>
+                        <div class="bar bar-16"><div class="bar_inner"></div></div>
+                        <div class="bar bar-17"><div class="bar_inner"></div></div>
+                        <div class="bar bar-18"><div class="bar_inner"></div></div>
+                        <div class="bar bar-19"><div class="bar_inner"></div></div>
+                        <div class="bar bar-20"><div class="bar_inner"></div></div>
+                        <div class="bar bar-21"><div class="bar_inner"></div></div>
+                        <div class="bar bar-22"><div class="bar_inner"></div></div>
+                        <div class="bar bar-23"><div class="bar_inner"></div></div>
+                        <div class="bar bar-24"><div class="bar_inner"></div></div>
+                </div>
+                <div class="round little_round-6"></div>
+                <div class="round little_round-7"></div>
+            </div>
+            <div class="earth">
+                <img class="planisphere" src="images/planisphere.jpg" alt="">
+                <div class="city_point dubai"></div>
+                <div class="city_point paris"></div>
+                <div class="city_point bangkok"></div>
+                <div class="city_point montreal"></div>
+                <div class="city_point tokyo"></div>
+                <div class="city_point rio"></div>
+                <div class="city_point lasvegas"></div>
+                <div class="city_point sydney"></div>
+                <div class="city_point lecap"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

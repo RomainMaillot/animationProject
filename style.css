@@ -1,0 +1,1090 @@
+body
+{
+    margin: 0;
+    background: #000508;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+@font-face
+{
+    font-family: 'digit';
+    src: url('fonts/digit.ttf');
+}
+
+.container
+{
+    height: 100vh;
+}
+
+h1
+{
+    font-family: 'digit', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 4px;
+    font-size: 3rem;
+    position: relative;
+    z-index: 1;
+    transition: 2s;
+    will-change: transform;
+}
+
+h1.appear
+{
+    transform: scale(0.8);
+    z-index: 14;
+}
+
+h2
+{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 4px;
+    font-size: 2rem;
+    opacity: 0;
+    transition: 2s;
+}
+
+/**
+* START
+*/
+
+.start_button
+{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+
+.start_button .round
+{
+    position: absolute;
+    border-radius: 50%;
+}
+
+.start_button .round.round-0
+{
+    background: #000000;
+    width: 10px;
+    height: 10px;
+    top: -5px;
+    left: -5px;
+}
+
+.start_button .round.round-1
+{
+    background: #ffffff;
+    width: 10px;
+    height: 10px;
+    top: -5px;
+    left: -5px;
+}
+.start_button .round.round-2
+{
+    background: #13FEFF;
+    width: 400px;
+    height: 400px;
+    top: -200px;
+    left: -200px;
+}
+
+.start_button .round.round-2 .little_round-1
+{
+    background: #000508;
+    width: 100px;
+    height: 100px;
+    left: 60px;
+    animation-name: turn-left;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-origin: 150px 190px;
+    animation-timing-function: linear;
+}
+
+@keyframes turn-left
+{
+    0%   {transform: rotate(0turn);}
+    100% {transform: rotate(1turn);}
+}
+
+@keyframes turn-right
+{
+    0%   {transform: rotate(0turn);}
+    100% {transform: rotate(-1turn);}
+}
+
+.start_button .round.round-2 .little_round-2
+{
+    background: #000508;
+    width: 300px;
+    height: 300px;
+    top: 50px;
+    left: 50px;
+    position: relative;
+    animation-name: turn-right;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.start_button .round.round-2 .little_round-2 .bar
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    will-change: transform;
+}
+
+.start_button .round.round-2 .little_round-2 .bar .bar_inner
+{
+    background: #13FEFF;
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    transform: translateY(117px);
+}
+
+.start_button .round.round-2 .little_round-2 .bar-1 { transform: rotate(0deg);} 
+.start_button .round.round-2 .little_round-2 .bar-2 { transform: rotate(5deg);} 
+.start_button .round.round-2 .little_round-2 .bar-3 { transform: rotate(10deg);} 
+.start_button .round.round-2 .little_round-2 .bar-4 { transform: rotate(15deg);} 
+.start_button .round.round-2 .little_round-2 .bar-5 { transform: rotate(20deg);} 
+.start_button .round.round-2 .little_round-2 .bar-6 { transform: rotate(25deg);} 
+.start_button .round.round-2 .little_round-2 .bar-7 { transform: rotate(30deg);} 
+.start_button .round.round-2 .little_round-2 .bar-8 { transform: rotate(35deg);} 
+.start_button .round.round-2 .little_round-2 .bar-9 { transform: rotate(40deg);} 
+.start_button .round.round-2 .little_round-2 .bar-10 { transform: rotate(45deg);} 
+.start_button .round.round-2 .little_round-2 .bar-11 { transform: rotate(50deg);} 
+.start_button .round.round-2 .little_round-2 .bar-12 { transform: rotate(55deg);}
+.start_button .round.round-2 .little_round-2 .bar-13 { transform: rotate(60deg);} 
+.start_button .round.round-2 .little_round-2 .bar-14 { transform: rotate(65deg);} 
+.start_button .round.round-2 .little_round-2 .bar-15 { transform: rotate(70deg);} 
+.start_button .round.round-2 .little_round-2 .bar-16 { transform: rotate(75deg);} 
+.start_button .round.round-2 .little_round-2 .bar-17 { transform: rotate(80deg);} 
+.start_button .round.round-2 .little_round-2 .bar-18 { transform: rotate(85deg);} 
+.start_button .round.round-2 .little_round-2 .bar-19 { transform: rotate(90deg);} 
+.start_button .round.round-2 .little_round-2 .bar-20 { transform: rotate(95deg);} 
+.start_button .round.round-2 .little_round-2 .bar-21 { transform: rotate(100deg);} 
+.start_button .round.round-2 .little_round-2 .bar-22 { transform: rotate(105deg);} 
+.start_button .round.round-2 .little_round-2 .bar-23 { transform: rotate(110deg);} 
+.start_button .round.round-2 .little_round-2 .bar-24 { transform: rotate(115deg);} 
+
+.start_button .round.round-2 .little_round-3
+{
+    background: #000508;
+    width: 210px;
+    height: 210px;
+    top: 92px;
+    left: 95px;
+    border: 3px #13FEFE;
+    border-style: dashed dotted;
+    border-left: none;
+    border-right: none;
+    animation-name: turn-left;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0, 0, 0.37, 1.04);
+}
+
+.start_button .round.round-2 .little_round-4
+{
+    background: #13FEFF;
+    width: 150px;
+    height: 150px;
+    top: 125px;
+    left: 125px;
+}
+
+.start_button .round.round-2 .little_round-5
+{
+    background: #000508;
+    width: 100px;
+    height: 100px;
+    top: 150px;
+    left: 150px;
+    animation-name: turn-left;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0.8;
+}
+.start_button .round.round-2 .little_round-5 .bar
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    will-change: transform;
+}
+
+.start_button .round.round-2 .little_round-5 .bar .bar_inner
+{
+    background: #13FEFF;
+    width: 1px;
+    height: 10px;
+    position: absolute;
+    transform: translateY(32px);
+}
+
+.start_button .round.round-2 .little_round-5 .bar-1 { transform: rotate(200deg);} 
+.start_button .round.round-2 .little_round-5 .bar-2 { transform: rotate(205deg);} 
+.start_button .round.round-2 .little_round-5 .bar-3 { transform: rotate(210deg);} 
+.start_button .round.round-2 .little_round-5 .bar-4 { transform: rotate(215deg);} 
+.start_button .round.round-2 .little_round-5 .bar-5 { transform: rotate(220deg);} 
+.start_button .round.round-2 .little_round-5 .bar-6 { transform: rotate(225deg);} 
+.start_button .round.round-2 .little_round-5 .bar-7 { transform: rotate(230deg);} 
+.start_button .round.round-2 .little_round-5 .bar-8 { transform: rotate(235deg);} 
+.start_button .round.round-2 .little_round-5 .bar-9 { transform: rotate(240deg);} 
+.start_button .round.round-2 .little_round-5 .bar-10 { transform: rotate(245deg);} 
+.start_button .round.round-2 .little_round-5 .bar-11 { transform: rotate(250deg);} 
+.start_button .round.round-2 .little_round-5 .bar-12 { transform: rotate(255deg);}
+.start_button .round.round-2 .little_round-5 .bar-13 { transform: rotate(260deg);} 
+.start_button .round.round-2 .little_round-5 .bar-14 { transform: rotate(265deg);} 
+.start_button .round.round-2 .little_round-5 .bar-15 { transform: rotate(270deg);} 
+.start_button .round.round-2 .little_round-5 .bar-16 { transform: rotate(275deg);} 
+.start_button .round.round-2 .little_round-5 .bar-17 { transform: rotate(280deg);} 
+.start_button .round.round-2 .little_round-5 .bar-18 { transform: rotate(285deg);} 
+.start_button .round.round-2 .little_round-5 .bar-19 { transform: rotate(290deg);} 
+.start_button .round.round-2 .little_round-5 .bar-20 { transform: rotate(295deg);} 
+.start_button .round.round-2 .little_round-5 .bar-21 { transform: rotate(300deg);} 
+.start_button .round.round-2 .little_round-5 .bar-22 { transform: rotate(305deg);} 
+.start_button .round.round-2 .little_round-5 .bar-23 { transform: rotate(310deg);} 
+.start_button .round.round-2 .little_round-5 .bar-24 { transform: rotate(315deg);} 
+
+.start_button .round.round-2 .little_round-6
+{
+    background: #FEA324;
+    width: 50px;
+    height: 50px;
+    top: 175px;
+    left: 175px;
+}
+
+.start_button .round.round-2 .little_round-7
+{
+    background: #000508;
+    width: 48px;
+    height: 48px;
+    top: 176px;
+    left: 176px;
+}
+
+.start_animation
+{
+    animation-name: go;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.start_animation_middle
+{
+    animation-name: go-middle;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.start_animation_after
+{
+    animation-name: go-after;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes go
+{
+    0%   {transform: scale(1);}
+    20%  {transform: scale(0.8);}
+    100% {transform: scale(8);}
+}
+
+@keyframes go-middle
+{
+    0%   {transform: scale(1);}
+    20%  { z-index: 10;}
+    100% {transform: scale(250);  z-index: 10;}
+}
+
+@keyframes go-after
+{
+    0%   {transform: scale(1);}
+    20%  { z-index: 11;}
+    100% {transform: scale(250);  z-index: 11;}
+}
+
+/**
+* SIDE MENU
+*/
+
+.menu
+{
+    position: fixed;
+    top: 0;
+    width: 0;
+    height: 150%;
+    z-index: 20;
+}
+
+.menu-1
+{
+    left: -110px;
+}
+
+.menu-1 .inner
+{
+    transform: translateX(-100%)
+}
+
+.menu-2
+{
+    right: 360px;
+}
+
+.menu-2 .inner
+{
+    transform: translateX(100%)
+}
+
+.menu .inner
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    background: #000;
+    padding: 20px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    transition-timing-function: ease-in-out;
+    will-change: transform;
+    border: #13FEFE 1px solid;
+    border-radius: 50%;
+}
+
+.menu.open .inner
+{
+    transform: translateX(0%) translateY(-10%);
+}
+
+.menu-1 h3
+{
+    position: absolute;
+    top: 140px;
+    left: 150px;
+}
+
+.menu-1 h3:after
+{
+    position: absolute;
+    content: "";
+    border-bottom: solid 1px white;
+    width: 100%;
+    left: 10px;
+    bottom: -2px;
+}
+
+/**
+* LEFT MENU INFORMATIONS
+*/
+
+.menu-1 .global_informations
+{
+    position: absolute;
+    top: 230px;
+    left: 120px;
+}
+
+.menu-1 .global_informations p
+{
+    font-size: 0.6rem;
+}
+
+h4
+{
+    color: #7e7e7e;
+    font-size: 0.8rem;
+}
+
+.menu-1 .global_informations .day_informations
+{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.menu-1 .global_informations .day_informations img
+{
+    position: relative;
+    align-self: center;
+}
+
+.menu-1 .global_informations .day_informations img:nth-child(2)
+{
+    right: 61px;
+    bottom: 33px;
+    position: absolute;
+    animation-name: cloud-rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    will-change: transform;
+}
+
+@keyframes cloud-rotate
+{
+    0%   {transform: translateX(0) translateY(0);}
+    50%   {transform: translateX(0%) translateY(10%);}
+    100% {transform: translateX(0%) translateY(0%);}
+}
+
+.menu-1 .global_informations .equalizer
+{
+    position: relative;
+    top: 40px;
+    left: 22px;
+    border: solid 2px #555555;
+    width: 250px;
+    height: 20px;
+}
+
+.menu-1 .global_informations .equalizer .bar
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 20px;
+    background: #ffffff;
+    animation-name: equalizer-bar-bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    transform-origin: 50% 100%;
+    will-change: transform;
+    transition: 2s;
+}
+
+.menu-1 .global_informations .equalizer .bar-1 {left: 0px; animation-delay: 0.1s}
+.menu-1 .global_informations .equalizer .bar-2 {left: 10px; animation-delay: 0.5s}
+.menu-1 .global_informations .equalizer .bar-3 {left: 20px; animation-delay: 0.2s}
+.menu-1 .global_informations .equalizer .bar-4 {left: 30px; animation-delay: 0.7s}
+.menu-1 .global_informations .equalizer .bar-5 {left: 40px; animation-delay: 0.4s}
+.menu-1 .global_informations .equalizer .bar-6 {left: 50px; animation-delay: 0.3s}
+.menu-1 .global_informations .equalizer .bar-7 {left: 60px; animation-delay: 0.8s}
+.menu-1 .global_informations .equalizer .bar-8 {left: 70px; animation-delay: 0.2s}
+.menu-1 .global_informations .equalizer .bar-9 {left: 80px; animation-delay: 0.7s}
+.menu-1 .global_informations .equalizer .bar-10 {left: 90px; animation-delay: 0.4s}
+.menu-1 .global_informations .equalizer .bar-11 {left: 100px; animation-delay: 0.1s}
+.menu-1 .global_informations .equalizer .bar-12 {left: 110px; animation-delay: 0.2s}
+.menu-1 .global_informations .equalizer .bar-13 {left: 120px; animation-delay: 0.6s}
+.menu-1 .global_informations .equalizer .bar-14 {left: 130px; animation-delay: 0.1s}
+.menu-1 .global_informations .equalizer .bar-15 {left: 140px; animation-delay: 0.8s}
+.menu-1 .global_informations .equalizer .bar-16 {left: 150px; animation-delay: 0.4s}
+.menu-1 .global_informations .equalizer .bar-17 {left: 160px; animation-delay: 0.5s}
+.menu-1 .global_informations .equalizer .bar-18 {left: 170px; animation-delay: 0.9s}
+.menu-1 .global_informations .equalizer .bar-19 {left: 180px; animation-delay: 0.7s}
+.menu-1 .global_informations .equalizer .bar-20 {left: 190px; animation-delay: 0.1s}
+.menu-1 .global_informations .equalizer .bar-21 {left: 200px; animation-delay: 0.3s}
+.menu-1 .global_informations .equalizer .bar-22 {left: 210px; animation-delay: 0.6s}
+.menu-1 .global_informations .equalizer .bar-23 {left: 220px; animation-delay: 0.2s}
+.menu-1 .global_informations .equalizer .bar-24 {left: 230px; animation-delay: 0.8s}
+.menu-1 .global_informations .equalizer .bar-25 {left: 240px; animation-delay: 0.4s}
+
+@keyframes equalizer-bar-bounce
+{
+    0%   {transform: scaleY(0.2);}
+    10%  {transform: scaleY(1);}
+    30%  {transform: scaleY(0.5)}
+    60%  {transform: scaleY(1);}
+    100% {transform: scaleY(0.2);}
+}
+
+.menu-1 .global_informations .end_line
+{
+    top: 155px;
+    position: absolute;
+    width: 320px;
+}
+
+.menu-1 .global_informations .end_line img:nth-child(1)
+{
+    width: 100%;
+    position: relative;
+}
+
+.menu-1 .global_informations .end_line img:nth-child(2)
+{
+    width: 25%;
+    position: absolute;
+    top: 13px;
+    animation-name: bar-move;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bar-move
+{
+    0%   {transform: translateX(0)}
+    50%  {transform: translateX(300%)}
+    100% {transform: translateX(0)}
+}
+
+/**
+* LEFT MENU CITY
+*/
+
+.menu-1 .city
+{
+    position: absolute;
+    top: 410px;
+    left: 120px;
+}
+
+.menu-1 .city .city_big_container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 320px;
+}
+
+.menu-1 .city .city_big_container .city_container
+{
+    border: solid 1px white;
+    font-size: 0.5rem;
+    width: 100px; 
+    height: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-1 .city .city_big_container .city_container:after
+{
+    content: "";
+    width: 8%;
+    height: 20%;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border-bottom: solid 1px white;
+    border-right: solid 1px white;
+    opacity: 0.5;
+    transition: 0.5s;
+    will-change: transform;
+}
+
+.menu-1 .city .city_big_container .city_container:before
+{
+    content: "";
+    width: 8%;
+    height: 20%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    border-top: solid 1px white;
+    border-left: solid 1px white;
+    opacity: 0.5;
+    transition: 0.5s;
+    will-change: transform;
+}
+
+.menu-1 .city .city_big_container .city_container:hover
+{
+    animation: flash 0.3s;
+}
+
+.menu-1 .city .city_big_container .city_container:hover:after
+{
+    transform: translateX(120%) translateY(140%);
+}
+
+.menu-1 .city .city_big_container .city_container:hover:before
+{
+    transform: translateX(-120%) translateY(-140%);
+}
+
+.menu-1 .city .city_big_container .city_container.selected:after
+{
+    transform: translateX(-100%) translateY(-40%);
+}
+
+.menu-1 .city .city_big_container .city_container.selected:before
+{
+    transform: translateX(100%) translateY(30%);
+}
+
+@keyframes flash
+{
+    0%   {background-color: rgba(255, 255, 255, 0);}
+    50%  {background-color: rgba(255, 255, 255, 0.6);}
+    100% {background-color: rgba(255, 255, 255, 0);}
+}
+
+.menu-1 .city .city_big_container .city_container p
+{
+    margin: 0;
+    align-self: center;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+}
+
+/**
+* LEFT MENU BUTTON
+*/
+
+.menu-1 .start_earthquake
+{
+    position: absolute;
+    top: 660px;
+    left: 190px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+}
+
+.menu-1 .start_earthquake h5
+{
+    align-self: center;
+    transform: rotate(-45deg);
+    color: #FEA324;
+    border: solid 1px #FEA324;
+    padding: 5% 8%;
+    position: relative;
+    background: #000000;
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+
+.menu-1 .start_earthquake h5:hover
+{
+    color: #000000;
+    border: solid 1px #FEA324;
+    background: #FEA324;
+}
+
+.menu-1 .start_earthquake .bg_circle
+{
+    border-right: solid 2px #FEA324;
+    border-radius: 50%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 26%;
+    left: 25%;
+    animation-name: turn-left;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.menu-1 .start_earthquake .square
+{
+    border-color: white;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transition: transform 2s;
+    will-change: transform;
+}
+
+.menu-1 .start_earthquake .square-1 {left: 0; border-left: solid 1px; border-top: solid 1px;}
+.menu-1 .start_earthquake .square-2 {right: 0; border-right: solid 1px; border-top: solid 1px;}
+.menu-1 .start_earthquake .square-3 {bottom: 0; left: 0; border-left: solid 1px; border-bottom: solid 1px;}
+.menu-1 .start_earthquake .square-4 {bottom: 0; right: 0; border-right: solid 1px; border-bottom: solid 1px;}
+.menu-1 .start_earthquake:hover .square-1 {transform: translateY(20%);}
+.menu-1 .start_earthquake:hover .square-2 {transform: translateX(-20%);}
+.menu-1 .start_earthquake:hover .square-3 {transform: translateX(20%);}
+.menu-1 .start_earthquake:hover .square-4 {transform: translateY(-20%);}
+
+/**
+* RIGHT MENU RICHTER
+*/
+
+.menu-2 .alert
+{
+    position: absolute;
+    top: 200px;
+    left: 75px;
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    color: #d21e1e;
+    border: solid 1px #d21e1e;
+    box-shadow: 0px 0px 8px rgba(220, 14, 14, 0.6);
+    opacity: 0;
+}
+
+.menu-2 .alert.warning
+{
+    animation-name: warning;
+    animation-duration: 0.5s;
+    animation-iteration-count: 5;
+    animation-fill-mode: forwards;
+}
+
+@keyframes warning
+{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.menu-2 .alert h5
+{
+    align-self: center;
+    text-shadow: 0px 0px 8px rgba(220, 14, 14, 0.6);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.menu-2 .alert img
+{
+    width: 20%;
+}
+
+.menu-2 .richter_scale
+{
+    position: absolute;
+    top: 280px;
+    left: 40px;
+}
+
+.menu-2 .richter_scale h4
+{
+    position: relative;
+    left: 210px;
+}
+
+.menu-2 .richter_scale .scale_container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 130px;
+}
+
+.menu-2 .richter_scale .scale_container .scale
+{
+    position: relative;
+    width: 90px;
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+.menu-2 .richter_scale .scale_container .scale h5
+{
+    position: relative;
+    top: 85px;
+    left: 5px;
+    height: 10px;
+    padding-left: 5px;
+    font-size: 0.6rem;
+    color: #FEA324;
+    border-left: dotted 2px #FEA324;
+}
+
+.menu-2 .richter_scale .scale_container .scale h5:after
+{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 41px;
+    height: 0.2px;
+    width: 32px;
+    background: #FEA324;
+}
+
+.menu-2 .richter_scale .scale_container .scale h5.moderate:after {left: 64px; width: 9px;}
+.menu-2 .richter_scale .scale_container .scale h5.strong:after {left: 50px; width: 23px;}
+
+.menu-2 .richter_scale .scale_container .scale p.magnitude
+{
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    font-size: 0.2rem;
+    color: #7e7e7e;
+    border-top: solid 0.2px #7e7e7e;
+    width: 70px;
+    padding-top: 5px;
+}
+
+.menu-2 .richter_scale .scale_container .scale p.magnitude:after
+{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background: #ffffff;
+    width: 10%;
+    height: 10px;
+}
+
+.menu-2 .richter_scale .scale_container .scale-2 p.magnitude:after { width: 20%; }
+.menu-2 .richter_scale .scale_container .scale-3 p.magnitude:after { width: 30%; }
+.menu-2 .richter_scale .scale_container .scale-4 p.magnitude:after { width: 40%; }
+.menu-2 .richter_scale .scale_container .scale-5 p.magnitude:after { width: 50%; }
+.menu-2 .richter_scale .scale_container .scale-6 p.magnitude:after { width: 60%; }
+.menu-2 .richter_scale .scale_container .scale-7 p.magnitude:after { width: 70%; }
+.menu-2 .richter_scale .scale_container .scale-8 p.magnitude:after { width: 80%; }
+.menu-2 .richter_scale .scale_container .scale-9 p.magnitude:after { width: 90%; }
+
+.menu-2 .richter_scale .scale_container .scale p.energy
+{
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    font-size: 0.2rem;
+    color: #7e7e7e;
+    width: 70px;
+    padding-top: 5px;
+    border-top: solid 0.2px #7e7e7e;
+}
+
+.menu-2 .richter_scale .scale_container .scale p.energy:after
+{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background: #7e7e7e;
+    width: 5%;
+    height: 10px;
+}
+
+.menu-2 .richter_scale .scale_container .scale-2 p.energy:after { width: 10%; }
+.menu-2 .richter_scale .scale_container .scale-3 p.energy:after { width: 20%; }
+.menu-2 .richter_scale .scale_container .scale-4 p.energy:after { width: 35%; }
+.menu-2 .richter_scale .scale_container .scale-5 p.energy:after { width: 55%; }
+.menu-2 .richter_scale .scale_container .scale-6 p.energy:after { width: 66%; }
+.menu-2 .richter_scale .scale_container .scale-7 p.energy:after { width: 80%; }
+.menu-2 .richter_scale .scale_container .scale-8 p.energy:after { width: 90%; }
+.menu-2 .richter_scale .scale_container .scale-9 p.energy:after { width: 100%; }
+
+.menu-2 .richter_scale .scale_container .scale .center
+{
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+
+.menu-2 .richter_scale .scale_container .scale .center *
+{
+    transition: 1s;
+    cursor: pointer;
+}
+
+.menu-2 .richter_scale .scale_container .scale .center:hover .circle-2
+{
+    animation-name: turn-left;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.menu-2 .richter_scale .scale_container .scale .center p
+{
+    color: #7e7e7e;
+    position: relative;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.2rem;
+    top: -2px;
+}
+
+.menu-2 .richter_scale .scale_container .scale .center .circle
+{
+    position: absolute;
+    border-radius: 50%;
+}
+
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-0
+{
+    background: #000000;
+    width: 80px;
+    height: 80px;
+    top: -30px;
+    left: -35px;
+    border: solid 0.2px;
+    border-color: #7e7e7e;
+}
+
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-1
+{
+    background: radial-gradient(#4e4e4e, black);
+    width: 70px;
+    height: 70px;
+    top: -26px;
+    left: -31px;
+    border: solid 1px;
+    border-color: #7e7e7e;
+}
+
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-2
+{
+    background: #000000;
+    width: 45px;
+    height: 45px;
+    top: -13px;
+    left: -18px;
+    border: solid 0.5px;
+    border-color: #7e7e7e;
+}
+
+.menu-2 .richter_scale .scale_container .scale .center .circle.current
+{
+    border-color: #FEA324;
+}
+
+.menu-2 .richter_scale .scale_container .scale p.current
+{
+    color: #13FEFF;
+}
+
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-2 *
+{
+    will-change: transform;
+}
+
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-2 .little_circle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-2 .little_circle .little_circle_inner
+{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 4px;
+    height: 4px;
+    background: #13FEFE;
+    border-radius: 50%;
+    transform: translateX(15px);
+}
+
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-2 .little_circle-1 { transform: rotate(calc(360deg / 8 * 1)); }
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-2 .little_circle-2 { transform: rotate(calc(360deg / 8 * 2)); }
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-2 .little_circle-3 { transform: rotate(calc(360deg / 8 * 3)); }
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-2 .little_circle-4 { transform: rotate(calc(360deg / 8 * 4)); }
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-2 .little_circle-5 { transform: rotate(calc(360deg / 8 * 5)); }
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-2 .little_circle-6 { transform: rotate(calc(360deg / 8 * 6)); }
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-2 .little_circle-7 { transform: rotate(calc(360deg / 8 * 7)); }
+.menu-2 .richter_scale .scale_container .scale .center .circle.circle-2 .little_circle-8 { transform: rotate(calc(360deg / 8 * 8)); }
+
+/**
+* EARTH MIDDLE
+*/
+
+.earth
+{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.earth .planisphere
+{
+    width: 900px;
+    left: -450px;
+    top: -250px;
+    opacity: 0;
+    z-index: 12;
+    transition: 3s;
+    transition-delay: 2s;
+    position: relative;
+}
+
+.earth .city_point
+{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 13;
+    opacity: 0;
+}
+
+.earth .city_point:after
+{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    top: -10%;
+    left: -10%;
+}
+
+.earth .city_point.dubai    {top: 0px; left: 90px;}
+.earth .city_point.paris    {top: -57px; left: -28px;}
+.earth .city_point.bangkok  {top: 30px; left: 193px;}
+.earth .city_point.montreal {top: -83px; left: -168px;}
+.earth .city_point.tokyo    {top: -38px; left: 270px;}
+.earth .city_point.rio      {top: 110px; left: -130px;}
+.earth .city_point.lasvegas {top: -40px; left: -270px;}
+.earth .city_point.sydney   {top: 150px; left: 290px;}
+.earth .city_point.lecap    {top: 135px; left: 10px;}
+
+.earth .city_point.city_appear
+{
+    animation-name: city-appear;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    opacity: 0.8;
+}
+
+.earth .city_point.wave:after
+{
+    animation-name: wave;
+    animation-duration: 0.1s;
+    animation-iteration-count: 10;
+    animation-timing-function: linear;
+    opacity: 0.8;
+    background: #e74c3c;
+    border: solid 1px #e74c3c;
+}
+
+@keyframes city-appear
+{
+    0% {transform: scale(5); border: solid 1px #e74c3c;}
+    80% {transform: scale(1); border: solid 1px #e74c3c;}
+    100% {background:#e74c3c; border: solid 1px #e74c3c;}
+}
+
+@keyframes wave
+{
+    0% {transform: translateX(0) translateY(0);}
+    25% {transform: translateX(5%);}
+    50% {transform: translateX(0) translateY(5%);}
+    75% {transform: translateX(-5%);}
+    100% {transform: translateX(0) translateY(-5%);}
+}
